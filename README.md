@@ -13,7 +13,7 @@ data engineering and analytics workflow.
 - **Data Quality and Validation:** Applied duplicate detection, data cleaning, and completeness checks to improve dataset consistency.
 - **Interactive Analytics Dashboard:** Created a Databricks dashboard analyzing 1,000 clinical trials, including recruitment status, enrollment, study phases, and medical conditions.
 - **Healthcare Business Applications:** Demonstrated potential applications for clinical trial monitoring, pharmaceutical portfolio analysis, and research data management.
-- 
+
 ## Technologies Used
 
 - Databricks
