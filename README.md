@@ -84,3 +84,38 @@ Purpose: Transform processed clinical trial data into information that stakehold
 ClinicalTrials.gov API → Bronze Layer → Silver Layer → Gold Layer → Databricks AI/BI Dashboard
 
 This layered approach demonstrates how clinical research data can move from publicly available records to structured analytical datasets and interactive visualizations.
+
+## Data Pipeline Architecture
+
+This project implements a three-layer Medallion Architecture using Databricks, Apache Spark, SQL, and Delta Lake.
+
+```mermaid
+flowchart TD
+    A["ClinicalTrials.gov API<br/>1,000 Clinical Trials"]
+    B["BRONZE LAYER<br/>Raw Clinical Trial Data<br/>clinical_trials_bronze"]
+    C["SILVER LAYER<br/>Data Cleaning & Validation<br/>clinical_trials_silver"]
+    D["GOLD LAYER<br/>Analytical Aggregations"]
+    E["Recruitment Status<br/>clinical_trials_gold_status"]
+    F["Study Phase<br/>clinical_trials_gold_phase"]
+    G["Medical Conditions<br/>clinical_trials_gold_condition"]
+    H["Databricks Analytics Dashboard<br/>KPIs, Charts & Filters"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    D --> G
+    E --> H
+    F --> H
+    G --> H
+
+    style A fill:#e8eaf6,stroke:#3949ab,color:#1a237e
+    style B fill:#fff3e0,stroke:#ef6c00,color:#5d4037
+    style C fill:#eceff1,stroke:#607d8b,color:#263238
+    style D fill:#fff8e1,stroke:#f9a825,color:#5d4037
+    style E fill:#e8f5e9,stroke:#388e3c,color:#1b5e20
+    style F fill:#e8f5e9,stroke:#388e3c,color:#1b5e20
+    style G fill:#e8f5e9,stroke:#388e3c,color:#1b5e20
+    style H fill:#e0f7fa,stroke:#00838f,color:#006064
+```
