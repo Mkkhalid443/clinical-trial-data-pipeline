@@ -35,4 +35,4 @@ The dashboard includes:
 
 ### Dashboard Preview
 
-![Clinical Trial Analytics Dashboard](./clinical-trial-dashboard.png)
+![Clinical Trial Analytics Dashboard](https://raw.githubusercontent.com/Mkkhalid443/clinical-trial-data-pipeline/main/clinical-trial-dashboard.png)
