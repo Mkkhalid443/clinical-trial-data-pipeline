@@ -5,6 +5,15 @@
 This project demonstrates an end-to-end clinical trial
 data engineering and analytics workflow.
 
+## Project Highlights
+
+- **End-to-End Data Engineering:** Developed a clinical trial data pipeline using Databricks, Apache Spark, SQL, and Delta Lake.
+- **Real-World Healthcare Data:** Retrieved and processed 1,000 clinical trial records from the ClinicalTrials.gov API.
+- **Medallion Architecture:** Implemented Bronze, Silver, and Gold data layers to organize raw data, perform transformations, and prepare analytical datasets.
+- **Data Quality and Validation:** Applied duplicate detection, data cleaning, and completeness checks to improve dataset consistency.
+- **Interactive Analytics Dashboard:** Created a Databricks dashboard analyzing 1,000 clinical trials, including recruitment status, enrollment, study phases, and medical conditions.
+- **Healthcare Business Applications:** Demonstrated potential applications for clinical trial monitoring, pharmaceutical portfolio analysis, and research data management.
+- 
 ## Technologies Used
 
 - Databricks
